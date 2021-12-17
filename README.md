@@ -10,3 +10,4 @@
   6. [Staircase](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/staircase)
   7. [Min-Max Sum](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/min-max-sum)
   8. [Birthday Cake Candles](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/birthday-cake-candles)
+  9. [Compare the Triplets](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/compare-the-triplets)
