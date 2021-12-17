@@ -1,0 +1,8 @@
+// read integers line by line
+
+var a = Int(readLine()!)!
+var b = Int(readLine()!)!
+
+    print(a+b)
+
+// Hint: Type print(a + b) below
