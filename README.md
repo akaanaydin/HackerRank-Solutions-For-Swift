@@ -12,3 +12,4 @@
   8. [Birthday Cake Candles](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/birthday-cake-candles)
   9. [Compare the Triplets](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/compare-the-triplets)
   10. [Time Conversion](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/time-conversion)
+  11. [Grading Students](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/grading-students)
