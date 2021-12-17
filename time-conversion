@@ -1,0 +1,80 @@
+import Foundation
+
+/*
+ * Complete the 'timeConversion' function below.
+ *
+ * The function is expected to return a STRING.
+ * The function accepts STRING s as parameter.
+ */
+
+
+/*************************CODE HERE*************************/
+
+func timeConversion(s: String) -> String {
+
+var arr = s.map({ String($0) })
+var clock = ""
+var newClock = [String]()
+var newFormat = [String]()
+
+
+if arr[8] == "P"{
+
+if arr[0] == "1" && arr[1] == "2" {
+
+    clock = "12"
+    newClock = clock.map({ String($0) })
+
+}else {
+
+    clock = String(Int("\(arr[0])\(arr[1])")! + 12)
+    newClock = clock.map({ String($0) })
+
+}
+
+
+}else if arr[8] == "A"{
+
+if arr[0] == "1" && arr[1] == "2" {
+
+    clock = "00"
+    newClock = clock.map({ String($0) })
+
+}else {
+
+    newClock.append(arr[0])
+    newClock.append(arr[1])
+
+}
+
+
+}else{
+
+print("Error")
+
+}
+
+arr[0] = newClock[0]
+arr[1] = newClock[1]
+
+for i in 0...7{
+
+    newFormat.append(arr[i])
+
+}
+
+    return newFormat.joined(separator: "")
+}
+/*************************CODE HERE*************************/
+
+
+let stdout = ProcessInfo.processInfo.environment["OUTPUT_PATH"]!
+FileManager.default.createFile(atPath: stdout, contents: nil, attributes: nil)
+let fileHandle = FileHandle(forWritingAtPath: stdout)!
+
+guard let s = readLine() else { fatalError("Bad input") }
+
+let result = timeConversion(s: s)
+
+fileHandle.write(result.data(using: .utf8)!)
+fileHandle.write("\n".data(using: .utf8)!)
