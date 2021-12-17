@@ -3,6 +3,10 @@
 var a = Int(readLine()!)!
 var b = Int(readLine()!)!
 
+/*************************CODE HERE*************************/
+
     print(a+b)
+
+/*************************CODE HERE*************************/
 
 // Hint: Type print(a + b) below
