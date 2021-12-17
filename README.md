@@ -13,3 +13,4 @@
   9. [Compare the Triplets](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/compare-the-triplets)
   10. [Time Conversion](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/time-conversion)
   11. [Grading Students](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/grading-students)
+  12. [Apple and Orange](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/apple-and-orange)
