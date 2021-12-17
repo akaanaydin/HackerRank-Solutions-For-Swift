@@ -9,3 +9,4 @@
   5. [Plus Minus](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/plus-minus)
   6. [Staircase](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/staircase)
   7. [Min-Max Sum](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/min-max-sum)
+  8. [Birthday Cake Candles](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/birthday-cake-candles)
