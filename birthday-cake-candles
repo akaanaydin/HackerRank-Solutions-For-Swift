@@ -1,0 +1,53 @@
+import Foundation
+
+/*
+ * Complete the 'birthdayCakeCandles' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts INTEGER_ARRAY candles as parameter.
+ */
+
+/*************************CODE HERE*************************/
+func birthdayCakeCandles(candles: [Int]) -> Int {
+    var sortedArray = candles.sorted()
+    var arrayCount = sortedArray.count - 1
+    var candleCount = 0
+    
+    while arrayCount >= 0 {
+        
+        if sortedArray[sortedArray.count - 1] == sortedArray[arrayCount]{
+            candleCount += 1
+        }else{
+            break
+        }
+        
+        arrayCount -= 1
+        
+    }
+    
+    return candleCount
+
+}
+/*************************CODE HERE*************************/
+
+let stdout = ProcessInfo.processInfo.environment["OUTPUT_PATH"]!
+FileManager.default.createFile(atPath: stdout, contents: nil, attributes: nil)
+let fileHandle = FileHandle(forWritingAtPath: stdout)!
+
+guard let candlesCount = Int((readLine()?.trimmingCharacters(in: .whitespacesAndNewlines))!)
+else { fatalError("Bad input") }
+
+guard let candlesTemp = readLine()?.replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression) else { fatalError("Bad input") }
+
+let candles: [Int] = candlesTemp.split(separator: " ").map {
+    if let candlesItem = Int($0) {
+        return candlesItem
+    } else { fatalError("Bad input") }
+}
+
+guard candles.count == candlesCount else { fatalError("Bad input") }
+
+let result = birthdayCakeCandles(candles: candles)
+
+fileHandle.write(String(result).data(using: .utf8)!)
+fileHandle.write("\n".data(using: .utf8)!)
