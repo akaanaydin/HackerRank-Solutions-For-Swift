@@ -1,4 +1,4 @@
-# HackerRank-Solutions-For-Swift
+# HackerRank Solutions For Swift
 
   >PROBLEM SOLVING QUESTIONS
 
