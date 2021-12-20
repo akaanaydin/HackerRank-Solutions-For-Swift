@@ -17,3 +17,4 @@
   13. [Number Line Jumps](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/number-line-jumps)
   14. [Sparse Arrays](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/sparse-arrays)
   15. [Lonely Integer](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/lonely-integer)
+  16. [Flipping Bits](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/flipping-bits)
