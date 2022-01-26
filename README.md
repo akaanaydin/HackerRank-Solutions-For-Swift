@@ -23,3 +23,6 @@
   19. [Migratory Birds](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/migratory-birds)
   20. [Divisible Sum Pairs](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/divisible-sum-pairs)
   21. [Flipping the Matrix](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/flipping-the-matrix)
+  22. [Permuting Two Arrays](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/permuting-two-arrays)
+  23. [Pangrams](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/pangrams)
+  24. [Counting Sort 1](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/counting-sort-1)
