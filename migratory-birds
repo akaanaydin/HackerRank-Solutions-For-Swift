@@ -1,0 +1,85 @@
+import Foundation
+
+/*
+ * Complete the 'migratoryBirds' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts INTEGER_ARRAY arr as parameter.
+ */
+**************************CODE HERE**************************
+func migratoryBirds(arr: [Int]) -> Int {
+    
+    var type1 = 0
+    var type2 = 0
+    var type3 = 0
+    var type4 = 0
+    var type5 = 0
+    var typeArr = [Int]()
+    var maxBirds = [Int]()
+    
+     for i in 0..<arr.count{
+         switch arr[i] {
+             case 1:
+             type1 += 1
+             case 2:
+             type2 += 1
+             case 3:
+             type3 += 1
+             case 4:
+             type4 += 1
+             case 5:
+             type5 += 1
+             default:
+             print("Error")
+             
+         }
+     }
+     typeArr.append(type1)
+     typeArr.append(type2)
+     typeArr.append(type3)
+     typeArr.append(type4)
+     typeArr.append(type5)
+     
+     var sortedArr = typeArr.sorted()
+     
+     for a in 0..<typeArr.count{
+         if typeArr[a] == sortedArr[sortedArr.count-1]{
+             maxBirds.append(a+1)
+         }
+     }
+     
+     if maxBirds.count == 2{
+         if maxBirds[0] > maxBirds[1]{
+             return maxBirds[1]
+         }else{
+             return maxBirds[0]
+         }
+     }else{
+         return maxBirds[0]
+     }
+     
+}
+**************************CODE HERE**************************
+
+
+let stdout = ProcessInfo.processInfo.environment["OUTPUT_PATH"]!
+FileManager.default.createFile(atPath: stdout, contents: nil, attributes: nil)
+let fileHandle = FileHandle(forWritingAtPath: stdout)!
+
+guard let arrCount = Int((readLine()?.trimmingCharacters(in: .whitespacesAndNewlines))!)
+else { fatalError("Bad input") }
+
+guard let arrTemp = readLine()?.replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression) else { fatalError("Bad input") }
+
+let arr: [Int] = arrTemp.split(separator: " ").map {
+    if let arrItem = Int($0) {
+        return arrItem
+    } else { fatalError("Bad input") }
+}
+
+guard arr.count == arrCount else { fatalError("Bad input") }
+
+let result = migratoryBirds(arr: arr)
+
+fileHandle.write(String(result).data(using: .utf8)!)
+fileHandle.write("\n".data(using: .utf8)!)
