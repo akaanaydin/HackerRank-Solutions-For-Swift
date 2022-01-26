@@ -1,0 +1,37 @@
+import Foundation
+
+/*
+ * Complete the 'pangrams' function below.
+ *
+ * The function is expected to return a STRING.
+ * The function accepts STRING s as parameter.
+ */
+************************CODE HERE************************
+func pangrams(s: String) -> String {
+
+    var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"," "]
+    
+    var stringArray = String(s.uppercased())
+    
+    for i in 0..<alphabet.count {
+        
+        if stringArray.contains("\(alphabet[i])") == false {
+            return "not pangram"
+        }
+    }
+    
+    return "pangram"
+}
+************************CODE HERE************************
+
+
+let stdout = ProcessInfo.processInfo.environment["OUTPUT_PATH"]!
+FileManager.default.createFile(atPath: stdout, contents: nil, attributes: nil)
+let fileHandle = FileHandle(forWritingAtPath: stdout)!
+
+guard let s = readLine() else { fatalError("Bad input") }
+
+let result = pangrams(s: s)
+
+fileHandle.write(result.data(using: .utf8)!)
+fileHandle.write("\n".data(using: .utf8)!)
