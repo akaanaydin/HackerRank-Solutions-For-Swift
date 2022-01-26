@@ -27,3 +27,4 @@
   23. [Pangrams](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/pangrams)
   24. [Counting Sort](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/counting-sort-1)
   25. [Sales by Match](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/sales-by-match)
+  26. [Drawing Book](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/drawing-book)
