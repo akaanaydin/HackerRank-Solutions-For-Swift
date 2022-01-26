@@ -1,0 +1,74 @@
+import Foundation
+
+/*
+ * Complete the 'flippingMatrix' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts 2D_INTEGER_ARRAY matrix as parameter.
+ */
+ 
+*******************************CODE HERE*******************************
+func flippingMatrix(matrix: [[Int]]) -> Int {
+    var n = matrix.count/2
+    var c1 = 0
+    var c2 = 0
+    var c3 = 0
+    var c4 = 0
+    var sumArr = [Int]()
+    var sum = 0
+   
+   for i in 0..<n{
+     for j in 0..<n{
+       c1 = matrix[i][2*n - j - 1]
+       sumArr.append(c1)
+       c2 = matrix[i][j]
+       sumArr.append(c2)
+       c3 = matrix[2*n - i - 1][j]
+       sumArr.append(c3)
+       c4 = matrix[2*n - i - 1][2*n - j - 1]
+       sumArr.append(c4)
+       sum += sumArr.max()!
+       sumArr.removeAll()
+     }
+    
+   }
+
+  return sum
+
+}
+*******************************CODE HERE*******************************
+
+let stdout = ProcessInfo.processInfo.environment["OUTPUT_PATH"]!
+FileManager.default.createFile(atPath: stdout, contents: nil, attributes: nil)
+let fileHandle = FileHandle(forWritingAtPath: stdout)!
+
+guard let q = Int((readLine()?.trimmingCharacters(in: .whitespacesAndNewlines))!)
+else { fatalError("Bad input") }
+
+for qItr in 1...q {
+    guard let n = Int((readLine()?.trimmingCharacters(in: .whitespacesAndNewlines))!)
+    else { fatalError("Bad input") }
+
+    var matrix = [[Int]]()
+
+    for _ in 1...2 * n {
+        guard let matrixRowTemp = readLine()?.replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression) else { fatalError("Bad input") }
+
+        let matrixRow: [Int] = matrixRowTemp.split(separator: " ").map {
+            if let matrixItem = Int($0) {
+                return matrixItem
+            } else { fatalError("Bad input") }
+        }
+
+        guard matrixRow.count == 2 * n else { fatalError("Bad input") }
+
+        matrix.append(matrixRow)
+    }
+
+    guard matrix.count == 2 * n else { fatalError("Bad input") }
+
+    let result = flippingMatrix(matrix: matrix)
+
+    fileHandle.write(String(result).data(using: .utf8)!)
+    fileHandle.write("\n".data(using: .utf8)!)
+}
