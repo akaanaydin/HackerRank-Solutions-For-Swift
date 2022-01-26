@@ -18,3 +18,8 @@
   14. [Sparse Arrays](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/sparse-arrays)
   15. [Lonely Integer](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/lonely-integer)
   16. [Flipping Bits](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/flipping-bits)
+  17. [Left Rotation](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/left-rotation)
+  18. [Subarray Division](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/subarray-division)
+  19. [Migratory Birds](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/migratory-birds)
+  20. [Divisible Sum Pairs](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/divisible-sum-pairs)
+  21. [Flipping the Matrix](https://github.com/kaancoves/HackerRank-Solutions-For-Swift/blob/main/flipping-the-matrix)
